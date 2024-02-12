@@ -1,6 +1,12 @@
 import React from 'react'
-import {FaBars} from "react-icons/fa"
+import { useState } from 'react'
+import {FaBars,FaTimes} from "react-icons/fa"
 const Navbar = () => {
+const [nav,changeNav] = useState(true);
+ const changestate =()=>{
+  changeNav(nav=>!nav)
+ }
+ 
   return (
     <div className='fixed text-white bg-[#010001] px-4 py-5 w-full max-h-screen flex justify-between'>
         {//container
@@ -20,15 +26,21 @@ const Navbar = () => {
                 <li className='px-2 text-lg font-medium'>Contact Us</li>
             </ul>
         </div>
-        <div className='md:hidden font-medium text-xl pt-0.5'>
+        <div className='md:hidden font-medium text-xl z-10 pt-0.5'>
         
-            <button><FaBars></FaBars></button>
+            <button onClick={changestate}>{nav?<FaBars></FaBars>:<FaTimes/>}</button>
         </div>
         {//on mobile nav
         }
-        <div className='hidden'>
+        <ul className={nav ? 'hidden' : ' font-medium opacity-90 absolute top-0 left-0 w-full h-screen bg-[#010001] flex  flex-col justify-center items-center'}>
+                <li className='py-6 text-4xl'>Home</li>
+                <li className='py-6 text-4xl'>Events</li>
+                <li className='py-6 text-4xl'>Team</li>
+                <li className='py-6 text-4xl'>Timeline</li>
+                <li className='py-6 text-4xl'>Contact Us</li>
 
-        </div>
+            </ul>
+
     </div>
   )
 }
