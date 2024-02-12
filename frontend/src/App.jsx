@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
-
+import Event from './components/Event'
 function App() {
   
 
@@ -12,6 +12,7 @@ function App() {
     <>
      <Navbar></Navbar>
      <Home></Home>
+     <Event></Event>
     </>
   )
 }
