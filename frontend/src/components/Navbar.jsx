@@ -13,11 +13,11 @@ const Navbar = () => {
         </div>
         <div className='hidden md:block pb-0.5'>
             <ul className='  flex justify-around'>
-                <li className='px-2 font-medium'>Home</li>
-                <li className='px-2 font-medium'>Events</li>
-                <li className='px-2 font-medium'>Team</li>
-                <li className='px-2 font-medium'>Timeline</li>
-                <li className='px-2 font-medium'>Contact Us</li>
+                <li className='px-2 text-lg font-medium'>Home</li>
+                <li className='px-2 text-lg font-medium'>Events</li>
+                <li className='px-2 text-lg font-medium'>Team</li>
+                <li className='px-2 text-lg font-medium'>Timeline</li>
+                <li className='px-2 text-lg font-medium'>Contact Us</li>
             </ul>
         </div>
         <div className='md:hidden font-medium text-xl pt-0.5'>
