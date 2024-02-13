@@ -8,7 +8,7 @@ const [nav,changeNav] = useState(true);
  }
  
   return (
-    <div className='fixed text-white bg-[#010001] px-4 py-5 w-full max-h-screen flex justify-between'>
+    <div className='fixed text-white bg-[#010001] px-4 py-5 w-full max-h-screen flex z-20 justify-between'>
         {//container
         }
         <div className=''>
