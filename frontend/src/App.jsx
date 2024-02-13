@@ -7,6 +7,7 @@ import Home from './components/Home'
 import Event from './components/Event'
 import Videocard from './components/Videocard'
 import Buildit from './components/Buildit'
+import OpenCat from './components/OpenCat'
 function App() {
   
 
@@ -17,6 +18,7 @@ function App() {
      <Event></Event>
      <Videocard></Videocard>
      <Buildit></Buildit>
+     <OpenCat></OpenCat>
     </>
   )
 }
