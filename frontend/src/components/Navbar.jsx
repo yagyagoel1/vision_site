@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
       <div className='hidden md:block pb-0.5'>
         <ul className='flex justify-around'>
-          <li className='px-2 text-lg font-medium'> <Link
+          <li className='px-2 text-lg font-medium cursor-pointer'> <Link
             activeClass="active"
             to="home"
             smooth={true}
@@ -28,7 +28,7 @@ const Navbar = () => {
           
           >Home
           </Link></li>
-          <li className='px-2 text-lg font-medium'> <Link
+          <li className='px-2 text-lg font-medium cursor-pointer'> <Link
             activeClass="active"
             to="event"
             offset={-50}
@@ -37,16 +37,16 @@ const Navbar = () => {
            
           >Events
           </Link></li>
-          <li className='px-2 text-lg font-medium'>Team</li>
-          <li className='px-2 text-lg font-medium'>Timeline</li>
-          <li className='px-2 text-lg font-medium'>Contact Us</li>
+          <li className='px-2 text-lg font-medium cursor-pointer'>Team</li>
+          <li className='px-2 text-lg font-medium cursor-pointer'>Timeline</li>
+          <li className='px-2 text-lg font-medium cursor-pointer'>Contact Us</li>
         </ul>
       </div>
       <div className='md:hidden font-medium text-xl z-10 pt-0.5'>
         <button onClick={toggleNav}>{nav ? <FaBars /> : <FaTimes />}</button>
       </div>
       <ul className={nav ? 'hidden' : 'font-medium opacity-90 absolute top-0 left-0 w-full h-screen bg-[#010001] flex flex-col justify-center items-center'}>
-        <li className='py-6 text-4xl'><Link
+        <li className='py-6 text-4xl cursor-pointer'><Link
             activeClass="active"
             to="home"
             smooth={true}
@@ -54,7 +54,7 @@ const Navbar = () => {
           
           >Home
           </Link></li>
-        <li className='py-6 text-4xl'><Link
+        <li className='py-6 text-4xl cursor-pointer'><Link
             activeClass="active"
             to="event"
             offset={-50}
@@ -63,9 +63,9 @@ const Navbar = () => {
            
           >Events
           </Link></li>
-        <li className='py-6 text-4xl'>Team</li>
-        <li className='py-6 text-4xl'>Timeline</li>
-        <li className='py-6 text-4xl'>Contact Us</li>
+        <li className='py-6 text-4xl cursor-pointer'>Team</li>
+        <li className='py-6 text-4xl cursor-pointer'>Timeline</li>
+        <li className='py-6 text-4xl cursor-pointer'>Contact Us</li>
       </ul>
     </div>
   );

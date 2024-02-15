@@ -3,7 +3,7 @@ import React from 'react'
 import bhailoadhojaImage from '../assets/ramram.jpeg';
 const Event = () => {
   return (
-    <div className='bg-[#010001] max-w  h-auto'>
+    <div name="event" className='bg-[#010001] max-w  h-auto'>
       {//Container
       }
 
