@@ -8,6 +8,7 @@ import Event from './components/Event'
 import Videocard from './components/Videocard'
 import Buildit from './components/Buildit'
 import OpenCat from './components/OpenCat'
+import Innovate from './components/Innovate'
 function App() {
   
 
@@ -19,6 +20,7 @@ function App() {
      <Videocard></Videocard>
      <Buildit></Buildit>
      <OpenCat></OpenCat>
+     <Innovate></Innovate>
     </>
   )
 }
