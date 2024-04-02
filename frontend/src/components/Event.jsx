@@ -22,6 +22,7 @@ const Event = () => {
 
 
 
+
         <div className=' py-8 lg:px-15 xl:px-20 md:px-10 px-5 flex  flex-col-reverse items-center sm:grid grid-cols-3 gap-2 '>
           <div className=' col-span-1 px-5 flex flex-col  items-center '>
             <div className='font-bold text-5xl xl:text-6xl  lg:text-5xl md:text-4xl sm:text-3xl'>MINDING</div>
